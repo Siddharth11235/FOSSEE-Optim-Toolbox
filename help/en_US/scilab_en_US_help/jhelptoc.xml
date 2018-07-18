@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE toc PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp TOC Version 1.0//EN" "http://java.sun.com/products/javahelp/toc_1_0.dtd">
+<toc version="1.0">
+<tocitem target="index" text="FOSSEE Optimization Toolbox">
+<tocitem target="section_0cbcd29fcf7a3b0fb510074d8833fcd8" text="FOSSEE Optimization Toolbox">
+<tocitem target="cbcintlinprog" text="cbcintlinprog"/>
+<tocitem target="fgoalattain" text="fgoalattain"/>
+<tocitem target="fminbnd" text="fminbnd"/>
+<tocitem target="fmincon" text="fmincon"/>
+<tocitem target="fminimax" text="fminimax"/>
+<tocitem target="fminunc" text="fminunc"/>
+<tocitem target="fot_version" text="fot_version"/>
+<tocitem target="intfminbnd" text="intfminbnd"/>
+<tocitem target="intfmincon" text="intfmincon"/>
+<tocitem target="intfminimax" text="intfminimax"/>
+<tocitem target="intfminunc" text="intfminunc"/>
+<tocitem target="intqpipopt" text="intqpipopt"/>
+<tocitem target="linprog" text="linprog"/>
+<tocitem target="lsqlin" text="lsqlin"/>
+<tocitem target="lsqnonlin" text="lsqnonlin"/>
+<tocitem target="lsqnonneg" text="lsqnonneg"/>
+<tocitem target="qpipopt" text="qpipopt"/>
+<tocitem target="qpipoptmat" text="qpipoptmat"/>
+<tocitem target="symphony" text="symphony"/>
+<tocitem target="symphonymat" text="symphonymat"/>
+</tocitem>
+</tocitem>
+</toc>
