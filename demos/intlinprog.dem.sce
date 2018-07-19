@@ -1,4 +1,4 @@
-intlinprogmode(1)
+mode(1)
 //
 // Demo of intlinprog.sci
 //
