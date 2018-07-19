@@ -1,6 +1,6 @@
 mode(1)
 //
-// Demo of intqpipopt.sci
+// Demo of intquadprog.sci
 //
 
 H = [1 -1; -1 2];
@@ -10,7 +10,7 @@ b = [2; 2; 3];
 lb=[0,0];
 ub=[%inf, %inf];
 intcon = [1 2];
-[xopt,fopt,status,output]=intqpipopt(H,f,intcon,A,b,[],[],lb,ub)
+[xopt,fopt,status,output]=intquadprog(H,f,intcon,A,b,[],[],lb,ub)
 halt()   // Press return to continue
  
 //Find x in R^6 such that:
@@ -28,5 +28,5 @@ param = list("MaxIter", 300, "CpuTime", 100);
 //and minimize 0.5*x'*H*x + f'*x with
 f=[1; 2; 3; 4; 5; 6]; H=eye(6,6);
 intcon = [2 4];
-[xopt,fopt,exitflag,output]=intqpipopt(H,f,intcon,A,b,Aeq,beq,lb,ub,x0,param)
+[xopt,fopt,exitflag,output]=intquadprog(H,f,intcon,A,b,Aeq,beq,lb,ub,x0,param)
 //========= E N D === O F === D E M O =========//

@@ -12,9 +12,9 @@ ub=[10000; 100; 1.5; 100; 100; 1000];
 f=[1; 2; 3; 4; 5; 6]; H=rand(6,6);
 
 //  !--error 10000 
-// intqpipopt: H is not a symmetric matrix
-// at line     236 of function intqpipopt called by :  
-// [xopt,fopt,exitflag,output,lambda]=intqpipopt(H,f,intcon,A,b,[],[],lb,ub)
+// intquadprog: H is not a symmetric matrix
+// at line     236 of function intquadprog called by :  
+// [xopt,fopt,exitflag,output,lambda]=intquadprog(H,f,intcon,A,b,[],[],lb,ub)
 
 
-[xopt,fopt,exitflag,output,lambda]=intqpipopt(H,f,intcon,A,b,[],[],lb,ub)
+[xopt,fopt,exitflag,output,lambda]=intquadprog(H,f,intcon,A,b,[],[],lb,ub)

@@ -17,7 +17,7 @@ intfminbnd
 intfmincon
 intfminimax
 intfminunc
-intqpipopt
+intquadprog
 linprog
 lsqlin
 lsqnonlin

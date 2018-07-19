@@ -1,6 +1,6 @@
 <html><head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>intlinprog</title>
+    <title>cbcintlinprog</title>
     <style type="text/css" media="all">
       @import url("scilab_code.css");
       @import url("xml_code.css");
@@ -29,21 +29,21 @@
 
 
 
-    <span class="path"><a href="index.html">FOSSEE Optimization Toolbox</a> &gt;&gt; <a href="section_0cbcd29fcf7a3b0fb510074d8833fcd8.html">FOSSEE Optimization Toolbox</a> &gt; intlinprog</span>
+    <span class="path"><a href="index.html">FOSSEE Optimization Toolbox</a> &gt;&gt; <a href="section_0cbcd29fcf7a3b0fb510074d8833fcd8.html">FOSSEE Optimization Toolbox</a> &gt; cbcintlinprog</span>
 
     <br /><br />
-    <div class="refnamediv"><h1 class="refname">intlinprog</h1>
+    <div class="refnamediv"><h1 class="refname">cbcintlinprog</h1>
     <p class="refpurpose">Solves a mixed integer linear programming constrained optimization problem in intlinprog format.</p></div>
 
 
 <div class="refsynopsisdiv"><h3 class="title">Calling Sequence</h3>
-   <div class="synopsis"><pre><span class="default">xopt</span><span class="default"> = </span><span class="functionid">intlinprog</span><span class="default">(</span><span class="default">c</span><span class="default">,</span><span class="default">intcon</span><span class="default">,</span><span class="default">A</span><span class="default">,</span><span class="default">b</span><span class="default">)</span>
-<span class="default">xopt</span><span class="default"> = </span><span class="functionid">intlinprog</span><span class="default">(</span><span class="default">c</span><span class="default">,</span><span class="default">intcon</span><span class="default">,</span><span class="default">A</span><span class="default">,</span><span class="default">b</span><span class="default">,</span><span class="default">Aeq</span><span class="default">,</span><span class="default">beq</span><span class="default">)</span>
-<span class="default">xopt</span><span class="default"> = </span><span class="functionid">intlinprog</span><span class="default">(</span><span class="default">c</span><span class="default">,</span><span class="default">intcon</span><span class="default">,</span><span class="default">A</span><span class="default">,</span><span class="default">b</span><span class="default">,</span><span class="default">Aeq</span><span class="default">,</span><span class="default">beq</span><span class="default">,</span><span class="default">lb</span><span class="default">,</span><span class="default">ub</span><span class="default">)</span>
-<span class="default">xopt</span><span class="default"> = </span><span class="functionid">intlinprog</span><span class="default">(</span><span class="default">c</span><span class="default">,</span><span class="default">intcon</span><span class="default">,</span><span class="default">A</span><span class="default">,</span><span class="default">b</span><span class="default">,</span><span class="default">Aeq</span><span class="default">,</span><span class="default">beq</span><span class="default">,</span><span class="default">lb</span><span class="default">,</span><span class="default">ub</span><span class="default">,</span><span class="default">options</span><span class="default">)</span>
-<span class="default">xopt</span><span class="default"> = </span><span class="functionid">intlinprog</span><span class="default">(</span>&#0039;<span class="default">path_to_mps_file</span>&#0039;<span class="default">)</span>
-<span class="default">xopt</span><span class="default"> = </span><span class="functionid">intlinprog</span><span class="default">(</span>&#0039;<span class="default">path_to_mps_file</span>&#0039;<span class="default">,</span><span class="default">options</span><span class="default">)</span>
-<span class="default">[</span><span class="default">xopt</span><span class="default">,</span><span class="default">fopt</span><span class="default">,</span><span class="default">status</span><span class="default">,</span><span class="default">output</span><span class="default">] = </span><span class="functionid">intlinprog</span><span class="default">( ... )</span></pre></div></div>
+   <div class="synopsis"><pre><span class="default">xopt</span><span class="default"> = </span><span class="functionid">cbcintlinprog</span><span class="default">(</span><span class="default">c</span><span class="default">,</span><span class="default">intcon</span><span class="default">,</span><span class="default">A</span><span class="default">,</span><span class="default">b</span><span class="default">)</span>
+<span class="default">xopt</span><span class="default"> = </span><span class="functionid">cbcintlinprog</span><span class="default">(</span><span class="default">c</span><span class="default">,</span><span class="default">intcon</span><span class="default">,</span><span class="default">A</span><span class="default">,</span><span class="default">b</span><span class="default">,</span><span class="default">Aeq</span><span class="default">,</span><span class="default">beq</span><span class="default">)</span>
+<span class="default">xopt</span><span class="default"> = </span><span class="functionid">cbcintlinprog</span><span class="default">(</span><span class="default">c</span><span class="default">,</span><span class="default">intcon</span><span class="default">,</span><span class="default">A</span><span class="default">,</span><span class="default">b</span><span class="default">,</span><span class="default">Aeq</span><span class="default">,</span><span class="default">beq</span><span class="default">,</span><span class="default">lb</span><span class="default">,</span><span class="default">ub</span><span class="default">)</span>
+<span class="default">xopt</span><span class="default"> = </span><span class="functionid">cbcintlinprog</span><span class="default">(</span><span class="default">c</span><span class="default">,</span><span class="default">intcon</span><span class="default">,</span><span class="default">A</span><span class="default">,</span><span class="default">b</span><span class="default">,</span><span class="default">Aeq</span><span class="default">,</span><span class="default">beq</span><span class="default">,</span><span class="default">lb</span><span class="default">,</span><span class="default">ub</span><span class="default">,</span><span class="default">options</span><span class="default">)</span>
+<span class="default">xopt</span><span class="default"> = </span><span class="functionid">cbcintlinprog</span><span class="default">(</span>&#0039;<span class="default">path_to_mps_file</span>&#0039;<span class="default">)</span>
+<span class="default">xopt</span><span class="default"> = </span><span class="functionid">cbcintlinprog</span><span class="default">(</span>&#0039;<span class="default">path_to_mps_file</span>&#0039;<span class="default">,</span><span class="default">options</span><span class="default">)</span>
+<span class="default">[</span><span class="default">xopt</span><span class="default">,</span><span class="default">fopt</span><span class="default">,</span><span class="default">status</span><span class="default">,</span><span class="default">output</span><span class="default">] = </span><span class="functionid">cbcintlinprog</span><span class="default">( ... )</span></pre></div></div>
 
 <div class="refsection"><h3 class="title">Input Parameters</h3>
    <dl><dt><span class="term">c :</span>
@@ -76,7 +76,7 @@
 
 <div class="refsection"><h3 class="title">Description</h3>
    <p class="para">Search the minimum or maximum of a constrained mixed integer linear programming optimization problem specified by :</p>
-   <p class="para"><span><img src='./_LaTeX_intlinprog.xml_1.png' style='position:relative;top:51px;width:4px;height:110px'/></span></p>
+   <p class="para"><span><img src='./_LaTeX_cbcintlinprog.xml_1.png' style='position:relative;top:51px;width:4px;height:110px'/></span></p>
    <p class="para">CBC, an optimization library written in C++, is used for solving the linear programming problems.</p>
 <p class="para"><h3 class="title">Options</h3>
 The options allow the user to set various parameters of the Optimization problem. The syntax for the options is given by:</p>
@@ -99,12 +99,12 @@ The options allow the user to set various parameters of the Optimization problem
    <p class="para">For more details on exitflag, see the Bonmin documentation which can be found on http://www.coin-or.org/Cbc</p>
    <p class="para"></p></div>
 
-<p class="para">A few examples displaying the various functionalities of intlinprog have been provided below. You will find a series of problems and the appropriate code snippets to solve them.</p>
+<p class="para">A few examples displaying the various functionalities of cbcintlinprog have been provided below. You will find a series of problems and the appropriate code snippets to solve them.</p>
 
 <div class="refsection"><h3 class="title">Example</h3>
    <p class="para">Here we solve a simple objective function, subjected to three linear inequality constraints.</p>
    <p class="para">Find x in R^8 such that it minimizes:</p>
-   <p class="para"><span><img src='./_LaTeX_intlinprog.xml_2.png' style='position:relative;top:12px;width:646px;height:146px'/></span></p>
+   <p class="para"><span><img src='./_LaTeX_cbcintlinprog.xml_2.png' style='position:relative;top:12px;width:646px;height:146px'/></span></p>
    <div class="programlisting"><table border="0" width="100%"><tr><td width="98%"><pre class="scilabcode"><span class="scilabcomment">// Example 1:</span>
 <span class="scilabcomment">// Reference: Westerberg, Carl-Henrik, Bengt Bjorklund, and Eskil Hultman. </span><span class="scilabcomment">&#0034;</span><span class="scilabcomment">An application of mixed integer</span>
 <span class="scilabcomment">// programming in a Swedish steel mill.</span><span class="scilabcomment">&#0034;</span><span class="scilabcomment"> Interfaces 7, no. 2 (1977): 39-43. Modified acc. to requirements.</span>
@@ -116,13 +116,13 @@ The options allow the user to set various parameters of the Optimization problem
 <span class="scilabcomment">//Defining the integer constraints</span>
 <span class="scilabid">intcon</span> <span class="scilaboperator">=</span> <span class="scilabopenclose">[</span><span class="scilabnumber">1</span> <span class="scilabnumber">2</span> <span class="scilabnumber">3</span> <span class="scilabnumber">4</span><span class="scilabopenclose">]</span><span class="scilabdefault">;</span>
 <span class="scilabcomment">// Calling Symphony</span>
-<span class="scilabopenclose">[</span><span class="scilabid">x</span><span class="scilabdefault">,</span><span class="scilabid">f</span><span class="scilabdefault">,</span><span class="scilabid">status</span><span class="scilabdefault">,</span><span class="scilabid">output</span><span class="scilabopenclose">]</span> <span class="scilaboperator">=</span> <span class="scilabid">intlinprog</span><span class="scilabopenclose">(</span><span class="scilabid">c</span><span class="scilabdefault">,</span><span class="scilabid">intcon</span><span class="scilabdefault">,</span><span class="scilabid">A</span><span class="scilabdefault">,</span><span class="scilabid">b</span><span class="scilabopenclose">)</span>
+<span class="scilabopenclose">[</span><span class="scilabid">x</span><span class="scilabdefault">,</span><span class="scilabid">f</span><span class="scilabdefault">,</span><span class="scilabid">status</span><span class="scilabdefault">,</span><span class="scilabid">output</span><span class="scilabopenclose">]</span> <span class="scilaboperator">=</span> <span class="scilabid">cbcintlinprog</span><span class="scilabopenclose">(</span><span class="scilabid">c</span><span class="scilabdefault">,</span><span class="scilabid">intcon</span><span class="scilabdefault">,</span><span class="scilabid">A</span><span class="scilabdefault">,</span><span class="scilabid">b</span><span class="scilabopenclose">)</span>
 <span class="scilabcomment">// Press ENTER to continue</span></pre></td><td valign="top"><a href="scilab://scilab.execexample/"><img src="ScilabExecute.png" border="0"/></a></td><td valign="top"><a href="scilab://scilab.editexample/"><img src="ScilabEdit.png" border="0"/></a></td><td></td></tr></table></div></div>
 
 <div class="refsection"><h3 class="title">Example</h3>
    <p class="para">Here we build up on the previous example by adding upper and lower bounds to the variables.
 We add the following bounds to the problem specified above:</p>
-   <p class="para"><span><img src='./_LaTeX_intlinprog.xml_3.png' style='position:relative;top:76px;width:125px;height:160px'/></span></p>
+   <p class="para"><span><img src='./_LaTeX_cbcintlinprog.xml_3.png' style='position:relative;top:76px;width:125px;height:160px'/></span></p>
    <div class="programlisting"><table border="0" width="100%"><tr><td width="98%"><pre class="scilabcode"><span class="scilabcomment">// Example 2:</span>
 <span class="scilabcomment">// Reference: Westerberg, Carl-Henrik, Bengt Bjorklund, and Eskil Hultman. </span><span class="scilabcomment">&#0034;</span><span class="scilabcomment">An application of mixed integer</span>
 <span class="scilabcomment">// programming in a Swedish steel mill.</span><span class="scilabcomment">&#0034;</span><span class="scilabcomment"> Interfaces 7, no. 2 (1977): 39-43. Modified acc. to requirements.</span>
@@ -140,13 +140,13 @@ We add the following bounds to the problem specified above:</p>
   <span class="scilabcomment">//Integer Constraints</span>
   <span class="scilabid">intcon</span> <span class="scilaboperator">=</span> <span class="scilabopenclose">[</span><span class="scilabnumber">1</span> <span class="scilabnumber">2</span> <span class="scilabnumber">3</span> <span class="scilabnumber">4</span><span class="scilabopenclose">]</span><span class="scilabdefault">;</span>
   <span class="scilabcomment">// Calling Symphony</span>
-  <span class="scilabopenclose">[</span><span class="scilabid">x</span><span class="scilabdefault">,</span><span class="scilabid">f</span><span class="scilabdefault">,</span><span class="scilabid">status</span><span class="scilabdefault">,</span><span class="scilabid">output</span><span class="scilabopenclose">]</span> <span class="scilaboperator">=</span> <span class="scilabid">intlinprog</span><span class="scilabopenclose">(</span><span class="scilabid">c</span><span class="scilabdefault">,</span><span class="scilabid">intcon</span><span class="scilabdefault">,</span><span class="scilabid">A</span><span class="scilabdefault">,</span><span class="scilabid">b</span><span class="scilabdefault">,</span><span class="scilabopenclose">[</span><span class="scilabopenclose">]</span><span class="scilabdefault">,</span><span class="scilabopenclose">[</span><span class="scilabopenclose">]</span><span class="scilabdefault">,</span><span class="scilabid">lb</span><span class="scilabdefault">,</span><span class="scilabid">ub</span><span class="scilabopenclose">)</span>
+  <span class="scilabopenclose">[</span><span class="scilabid">x</span><span class="scilabdefault">,</span><span class="scilabid">f</span><span class="scilabdefault">,</span><span class="scilabid">status</span><span class="scilabdefault">,</span><span class="scilabid">output</span><span class="scilabopenclose">]</span> <span class="scilaboperator">=</span> <span class="scilabid">cbcintlinprog</span><span class="scilabopenclose">(</span><span class="scilabid">c</span><span class="scilabdefault">,</span><span class="scilabid">intcon</span><span class="scilabdefault">,</span><span class="scilabid">A</span><span class="scilabdefault">,</span><span class="scilabid">b</span><span class="scilabdefault">,</span><span class="scilabopenclose">[</span><span class="scilabopenclose">]</span><span class="scilabdefault">,</span><span class="scilabopenclose">[</span><span class="scilabopenclose">]</span><span class="scilabdefault">,</span><span class="scilabid">lb</span><span class="scilabdefault">,</span><span class="scilabid">ub</span><span class="scilabopenclose">)</span>
 <span class="scilabcomment">// Press ENTER to continue</span></pre></td><td valign="top"><a href="scilab://scilab.execexample/"><img src="ScilabExecute.png" border="0"/></a></td><td valign="top"><a href="scilab://scilab.editexample/"><img src="ScilabEdit.png" border="0"/></a></td><td></td></tr></table></div></div>
 
 <div class="refsection"><h3 class="title">Example</h3>
    <p class="para">In this example, we proceed to add the linear equality constraints to the objective function.</p>
    
-   <p class="para"><span><img src='./_LaTeX_intlinprog.xml_4.png' style='position:relative;top:27px;width:4px;height:62px'/></span></p>
+   <p class="para"><span><img src='./_LaTeX_cbcintlinprog.xml_4.png' style='position:relative;top:27px;width:4px;height:62px'/></span></p>
    <div class="programlisting"><table border="0" width="100%"><tr><td width="98%"><pre class="scilabcode"><span class="scilabcomment">// Example 3:</span>
 <span class="scilabcomment">// Reference: Westerberg, Carl-Henrik, Bengt Bjorklund, and Eskil Hultman. </span><span class="scilabcomment">&#0034;</span><span class="scilabcomment">An application of mixed integer</span>
 <span class="scilabcomment">// programming in a Swedish steel mill.</span><span class="scilabcomment">&#0034;</span><span class="scilabcomment"> Interfaces 7, no. 2 (1977): 39-43. Modified acc. to requirements.</span>
@@ -168,13 +168,13 @@ We add the following bounds to the problem specified above:</p>
   <span class="scilabcomment">//Integer Constraints</span>
 <span class="scilabid">intcon</span> <span class="scilaboperator">=</span> <span class="scilabopenclose">[</span><span class="scilabnumber">1</span> <span class="scilabnumber">2</span> <span class="scilabnumber">3</span> <span class="scilabnumber">4</span><span class="scilabopenclose">]</span><span class="scilabdefault">;</span>
 <span class="scilabcomment">// Calling CBC</span>
-<span class="scilabopenclose">[</span><span class="scilabid">x</span><span class="scilabdefault">,</span><span class="scilabid">f</span><span class="scilabdefault">,</span><span class="scilabid">status</span><span class="scilabdefault">,</span><span class="scilabid">output</span><span class="scilabopenclose">]</span> <span class="scilaboperator">=</span> <span class="scilabid">intlinprog</span><span class="scilabopenclose">(</span><span class="scilabid">c</span><span class="scilabdefault">,</span><span class="scilabid">intcon</span><span class="scilabdefault">,</span><span class="scilabid">A</span><span class="scilabdefault">,</span><span class="scilabid">b</span><span class="scilabdefault">,</span><span class="scilabid">Aeq</span><span class="scilabdefault">,</span><span class="scilabid">beq</span><span class="scilabdefault">,</span><span class="scilabid">lb</span><span class="scilabdefault">,</span><span class="scilabid">ub</span><span class="scilabopenclose">)</span>
+<span class="scilabopenclose">[</span><span class="scilabid">x</span><span class="scilabdefault">,</span><span class="scilabid">f</span><span class="scilabdefault">,</span><span class="scilabid">status</span><span class="scilabdefault">,</span><span class="scilabid">output</span><span class="scilabopenclose">]</span> <span class="scilaboperator">=</span> <span class="scilabid">cbcintlinprog</span><span class="scilabopenclose">(</span><span class="scilabid">c</span><span class="scilabdefault">,</span><span class="scilabid">intcon</span><span class="scilabdefault">,</span><span class="scilabid">A</span><span class="scilabdefault">,</span><span class="scilabid">b</span><span class="scilabdefault">,</span><span class="scilabid">Aeq</span><span class="scilabdefault">,</span><span class="scilabid">beq</span><span class="scilabdefault">,</span><span class="scilabid">lb</span><span class="scilabdefault">,</span><span class="scilabid">ub</span><span class="scilabopenclose">)</span>
 <span class="scilabcomment">// Press ENTER to continue</span></pre></td><td valign="top"><a href="scilab://scilab.execexample/"><img src="ScilabExecute.png" border="0"/></a></td><td valign="top"><a href="scilab://scilab.editexample/"><img src="ScilabEdit.png" border="0"/></a></td><td></td></tr></table></div></div>
 
 <div class="refsection"><h3 class="title">Example</h3>
    <p class="para">Primal Infeasible Problems: Find x in R^8 such that it minimizes:</p>
    <p class="para">Find x in R^8 such that it minimizes:</p>
-   <p class="para"><span><img src='./_LaTeX_intlinprog.xml_5.png' style='position:relative;top:12px;width:666px;height:146px'/></span></p>
+   <p class="para"><span><img src='./_LaTeX_cbcintlinprog.xml_5.png' style='position:relative;top:12px;width:666px;height:146px'/></span></p>
    <div class="programlisting"><table border="0" width="100%"><tr><td width="98%"><pre class="scilabcode"><span class="scilabcomment">// Example 4:</span>
 <span class="scilabcomment">// Reference: Westerberg, Carl-Henrik, Bengt Bjorklund, and Eskil Hultman. </span><span class="scilabcomment">&#0034;</span><span class="scilabcomment">An application of mixed integer </span>
 <span class="scilabcomment">// programming in a Swedish steel mill.</span><span class="scilabcomment">&#0034;</span><span class="scilabcomment"> Interfaces 7, no. 2 (1977): 39-43. Modified acc. to requirements.</span>
@@ -189,12 +189,12 @@ We add the following bounds to the problem specified above:</p>
  
 <span class="scilabcomment">// Calling CBC</span>
  
-<span class="scilabopenclose">[</span><span class="scilabid">x</span><span class="scilabdefault">,</span><span class="scilabid">f</span><span class="scilabdefault">,</span><span class="scilabid">status</span><span class="scilabdefault">,</span><span class="scilabid">output</span><span class="scilabopenclose">]</span> <span class="scilaboperator">=</span> <span class="scilabid">intlinprog</span><span class="scilabopenclose">(</span><span class="scilabid">c</span><span class="scilabdefault">,</span><span class="scilabid">intcon</span><span class="scilabdefault">,</span><span class="scilabid">A</span><span class="scilabdefault">,</span><span class="scilabid">b</span><span class="scilabopenclose">)</span>
+<span class="scilabopenclose">[</span><span class="scilabid">x</span><span class="scilabdefault">,</span><span class="scilabid">f</span><span class="scilabdefault">,</span><span class="scilabid">status</span><span class="scilabdefault">,</span><span class="scilabid">output</span><span class="scilabopenclose">]</span> <span class="scilaboperator">=</span> <span class="scilabid">cbcintlinprog</span><span class="scilabopenclose">(</span><span class="scilabid">c</span><span class="scilabdefault">,</span><span class="scilabid">intcon</span><span class="scilabdefault">,</span><span class="scilabid">A</span><span class="scilabdefault">,</span><span class="scilabid">b</span><span class="scilabopenclose">)</span>
 <span class="scilabcomment">// Press ENTER to continue</span></pre></td><td valign="top"><a href="scilab://scilab.execexample/"><img src="ScilabExecute.png" border="0"/></a></td><td valign="top"><a href="scilab://scilab.editexample/"><img src="ScilabEdit.png" border="0"/></a></td><td></td></tr></table></div></div>
 
 <div class="refsection"><h3 class="title">Example</h3>
    <p class="para">Unbounded Problems. Find x in R^8 such that it minimizes:</p>
-   <p class="para"><span><img src='./_LaTeX_intlinprog.xml_6.png' style='position:relative;top:12px;width:650px;height:146px'/></span></p>
+   <p class="para"><span><img src='./_LaTeX_cbcintlinprog.xml_6.png' style='position:relative;top:12px;width:650px;height:146px'/></span></p>
    <div class="programlisting"><table border="0" width="100%"><tr><td width="98%"><pre class="scilabcode"><span class="scilabcomment">// Example 5:</span>
 <span class="scilabcomment">// Reference: Westerberg, Carl-Henrik, Bengt Bjorklund, and Eskil Hultman. </span><span class="scilabcomment">&#0034;</span><span class="scilabcomment">An application of mixed integer</span>
 <span class="scilabcomment">// programming in a Swedish steel mill.</span><span class="scilabcomment">&#0034;</span><span class="scilabcomment"> Interfaces 7, no. 2 (1977): 39-43. Modified acc. to requirements.</span>
@@ -210,7 +210,7 @@ We add the following bounds to the problem specified above:</p>
   <span class="scilabcomment">//Integer Constraints</span>
 <span class="scilabid">intcon</span> <span class="scilaboperator">=</span> <span class="scilabopenclose">[</span><span class="scilabnumber">1</span> <span class="scilabnumber">2</span> <span class="scilabnumber">3</span> <span class="scilabnumber">4</span><span class="scilabopenclose">]</span><span class="scilabdefault">;</span>
 <span class="scilabcomment">// Calling CBC</span>
-<span class="scilabopenclose">[</span><span class="scilabid">x</span><span class="scilabdefault">,</span><span class="scilabid">f</span><span class="scilabdefault">,</span><span class="scilabid">status</span><span class="scilabdefault">,</span><span class="scilabid">output</span><span class="scilabopenclose">]</span> <span class="scilaboperator">=</span> <span class="scilabid">intlinprog</span><span class="scilabopenclose">(</span><span class="scilabid">c</span><span class="scilabdefault">,</span><span class="scilabid">intcon</span><span class="scilabdefault">,</span><span class="scilabid">A</span><span class="scilabdefault">,</span><span class="scilabid">b</span><span class="scilabdefault">,</span><span class="scilabid">Aeq</span><span class="scilabdefault">,</span><span class="scilabid">beq</span><span class="scilabopenclose">)</span>
+<span class="scilabopenclose">[</span><span class="scilabid">x</span><span class="scilabdefault">,</span><span class="scilabid">f</span><span class="scilabdefault">,</span><span class="scilabid">status</span><span class="scilabdefault">,</span><span class="scilabid">output</span><span class="scilabopenclose">]</span> <span class="scilaboperator">=</span> <span class="scilabid">cbcintlinprog</span><span class="scilabopenclose">(</span><span class="scilabid">c</span><span class="scilabdefault">,</span><span class="scilabid">intcon</span><span class="scilabdefault">,</span><span class="scilabid">A</span><span class="scilabdefault">,</span><span class="scilabid">b</span><span class="scilabdefault">,</span><span class="scilabid">Aeq</span><span class="scilabdefault">,</span><span class="scilabid">beq</span><span class="scilabopenclose">)</span>
 <span class="scilabcomment">// Press ENTER to continue</span></pre></td><td valign="top"><a href="scilab://scilab.execexample/"><img src="ScilabExecute.png" border="0"/></a></td><td valign="top"><a href="scilab://scilab.editexample/"><img src="ScilabEdit.png" border="0"/></a></td><td></td></tr></table></div></div>
 
 <div class="refsection"><h3 class="title">Authors</h3>

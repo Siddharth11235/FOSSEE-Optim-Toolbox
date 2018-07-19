@@ -11,11 +11,10 @@ f=[1; 2; 3; 4; 5; 6]; H=eye(6,6);
 intcon=[1,2];
 
 //  !--error 10000 
-// intqpipopt: The number of rows in A must be the same as the number of elements of b
-// at line     291 of function intqpipopt called by :  
-// [xopt,fopt,exitflag,output,lambda]=intqpipopt(H,f,intcon,A,b)
+// intquadprog: The number of rows in A must be the same as the number of elements of b
+// at line     291 of function intquadprog called by :  
+// [xopt,fopt,exitflag,output,lambda]=intquadprog(H,f,intcon,A,b)
 // at line      24 of exec file called by :    
-// exec intqpipopt_A1.sce
+// exec intquadprog_A1.sce
 
-[xopt,fopt,exitflag,output,lambda]=intqpipopt(H,f,intcon,A,b)
-
+[xopt,fopt,exitflag,output,lambda]=intquadprog(H,f,intcon,A,b)

@@ -2,11 +2,11 @@
 
 <!--
  *
- * This help file was generated from intqpipopt.sci using help_from_sci().
+ * This help file was generated from intquadprog.sci using help_from_sci().
  *
  -->
 
-<refentry version="5.0-subset Scilab" xml:id="intqpipopt" xml:lang="en"
+<refentry version="5.0-subset Scilab" xml:id="intquadprog" xml:lang="en"
           xmlns="http://docbook.org/ns/docbook"
           xmlns:xlink="http://www.w3.org/1999/xlink"
           xmlns:svg="http://www.w3.org/2000/svg"
@@ -16,7 +16,7 @@
           xmlns:db="http://docbook.org/ns/docbook">
 
   <refnamediv>
-    <refname>intqpipopt</refname>
+    <refname>intquadprog</refname>
     <refpurpose>Solves a linear quadratic problem.</refpurpose>
   </refnamediv>
 
@@ -24,15 +24,15 @@
 <refsynopsisdiv>
    <title>Calling Sequence</title>
    <synopsis>
-   xopt = intqpipopt(H,f)
-   xopt = intqpipopt(H,f,intcon)
-   xopt = intqpipopt(H,f,intcon,A,b)
-   xopt = intqpipopt(H,f,intcon,A,b,Aeq,beq)
-   xopt = intqpipopt(H,f,intcon,A,b,Aeq,beq,lb,ub)
-   xopt = intqpipopt(H,f,intcon,A,b,Aeq,beq,lb,ub,x0)
-   xopt = intqpipopt(H,f,intcon,A,b,Aeq,beq,lb,ub,x0,options)
-   xopt = intqpipopt(H,f,intcon,A,b,Aeq,beq,lb,ub,x0,options,"file_path")
-   [xopt,fopt,exitflag,output] = intqpipopt( ... )
+   xopt = intquadprog(H,f)
+   xopt = intquadprog(H,f,intcon)
+   xopt = intquadprog(H,f,intcon,A,b)
+   xopt = intquadprog(H,f,intcon,A,b,Aeq,beq)
+   xopt = intquadprog(H,f,intcon,A,b,Aeq,beq,lb,ub)
+   xopt = intquadprog(H,f,intcon,A,b,Aeq,beq,lb,ub,x0)
+   xopt = intquadprog(H,f,intcon,A,b,Aeq,beq,lb,ub,x0,options)
+   xopt = intquadprog(H,f,intcon,A,b,Aeq,beq,lb,ub,x0,options,"file_path")
+   [xopt,fopt,exitflag,output] = intquadprog( ... )
    
    </synopsis>
 </refsynopsisdiv>
@@ -98,7 +98,7 @@ Search the minimum of a constrained linear quadratic optimization problem specif
 </latex>
    </para>
    <para>
-intqpipopt calls Bonmin, a library written in C++ to solve the quadratic problem.
+intquadprog calls Bonmin, a library written in C++ to solve the quadratic problem.
    </para>
    <para>
 The exitflag allows to know the status of the optimization which is given back by Ipopt.
@@ -127,7 +127,7 @@ It is of type "struct" and contains the following fields.
 </para>
 </refsection>
 <para>
-A few examples displaying the various functionalities of intqpipopt have been provided below. You will find a series of problems and the appropriate code snippets to solve them.
+A few examples displaying the various functionalities of intquadprog have been provided below. You will find a series of problems and the appropriate code snippets to solve them.
    </para>
 <refsection>
    <title>Example</title>
@@ -164,7 +164,7 @@ F &amp;=
 f=[1; 2; 3; 4; 5; 6]; H=eye(6,6);
 //Integer Constraints
 intcon = [2 ,4];
-//Running intqpipopt
+//Running intquadprog
 [xopt,fopt,exitflag,output,lambda]=qpipoptmat(H,f)
    ]]></programlisting>
 </refsection>
@@ -193,8 +193,8 @@ A= [0,1,0,1,2,-1;
 b = [-1; 2.5];
 //Integer Constraints
 intcon = [2 ,4];
-//Running intqpipopt
-[xopt,fopt,exitflag,output,lambda]=intqpipopt(H,f,intcon,A,b)
+//Running intquadprog
+[xopt,fopt,exitflag,output,lambda]=intquadprog(H,f,intcon,A,b)
    ]]></programlisting>
 </refsection>
 
@@ -229,8 +229,8 @@ Aeq= [1,-1,1,0,3,1;
 beq=[1; 2; 3];
 //Integer Constraints
 intcon = [2 ,4];
-//Running intqpipopt
-[xopt,fopt,exitflag,output,lambda]=intqpipopt(H,f,intcon,A,b,Aeq,beq)
+//Running intquadprog
+[xopt,fopt,exitflag,output,lambda]=intquadprog(H,f,intcon,A,b,Aeq,beq)
    ]]></programlisting>
 </refsection>
 
@@ -272,8 +272,8 @@ lb=[-1000; -10000; 0; -1000; -1000; -1000];
 ub=[10000; 100; 1.5; 100; 100; 1000];
 //Integer Constraints
 intcon = [2 ,4];
-//Running intqpipopt
-[xopt,fopt,exitflag,output,lambda]=intqpipopt(H,f,intcon,A,b,Aeq,beq,lb,ub)
+//Running intquadprog
+[xopt,fopt,exitflag,output,lambda]=intquadprog(H,f,intcon,A,b,Aeq,beq,lb,ub)
    ]]></programlisting>
 </refsection>
 
@@ -303,8 +303,8 @@ x0 = repmat(0,6,1);
 options = list("MaxIter", 300, "CpuTime", 100);
 //Integer Constraints
 intcon = [2 ,4];
-//Running intqpipopt
-[xopt,fopt,exitflag,output,lambda]=intqpipopt(H,f,intcon,A,b,Aeq,beq,lb,ub,x0,options)
+//Running intquadprog
+[xopt,fopt,exitflag,output,lambda]=intquadprog(H,f,intcon,A,b,Aeq,beq,lb,ub,x0,options)
    ]]></programlisting>
 </refsection>
 
@@ -345,8 +345,8 @@ Aeq= [0,1,0,1,2,-1;
 beq=[4; 2];
 //Integer Constraints
 intcon = [2 ,4];
-//Running intqpipopt
-[xopt,fopt,exitflag,output,lambda]=intqpipopt(H,f,intcon,A,b,Aeq,beq)
+//Running intquadprog
+[xopt,fopt,exitflag,output,lambda]=intquadprog(H,f,intcon,A,b,Aeq,beq)
 ]]></programlisting>
 </refsection>
 
@@ -389,8 +389,8 @@ Aeq= [1,-1,1,0,3,1;
 -1,0,-3,-4,5,6];
 beq=[1; 2];
 intcon = [2 ,4];
-//Running intqpipopt
-[xopt,fopt,exitflag,output,lambda]=intqpipopt(H,f,intcon,A,b,Aeq,beq)
+//Running intquadprog
+[xopt,fopt,exitflag,output,lambda]=intquadprog(H,f,intcon,A,b,Aeq,beq)
 ]]></programlisting>
 </refsection>
 

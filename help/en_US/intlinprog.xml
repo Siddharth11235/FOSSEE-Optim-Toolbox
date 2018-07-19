@@ -176,7 +176,6 @@ intcon = [1 2 3 4];
 // Calling Symphony
 [x,f,status,output] = intlinprog(c,intcon,A,b)
 // Press ENTER to continue
-
    ]]></programlisting>
 </refsection>
 
@@ -209,7 +208,6 @@ We add the following bounds to the problem specified above:   </para>
       1.25,1.37,1.7,1.93,2.08,2.32,2.56,2.78;  
       1.15,1.34,1.66,1.99,2.06,2.32,2.58,2.84 ];
   b = [100 ,205, 249 ];
-
   // Lower Bound of variable
 lb = repmat(0,1,8);
 // Upper Bound of variables
@@ -219,7 +217,6 @@ ub = [repmat(1,1,4) repmat(%inf,1,4)];
   // Calling Symphony
   [x,f,status,output] = intlinprog(c,intcon,A,b,[],[],lb,ub)
 // Press ENTER to continue
-
    ]]></programlisting>
 </refsection>
 
@@ -262,7 +259,6 @@ intcon = [1 2 3 4];
 // Calling CBC
 [x,f,status,output] = intlinprog(c,intcon,A,b,Aeq,beq,lb,ub)
 // Press ENTER to continue
-
    ]]></programlisting>
 </refsection>
 
@@ -310,7 +306,6 @@ intcon = [1 2 3 4];
  
 [x,f,status,output] = intlinprog(c,intcon,A,b)
 // Press ENTER to continue
-
    ]]></programlisting>
 </refsection>
 
@@ -356,7 +351,6 @@ intcon = [1 2 3 4];
 // Calling CBC
 [x,f,status,output] = intlinprog(c,intcon,A,b,Aeq,beq)
 // Press ENTER to continue
-
    ]]></programlisting>
 </refsection>
 

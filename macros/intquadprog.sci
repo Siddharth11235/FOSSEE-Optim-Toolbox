@@ -9,19 +9,19 @@
 // Organization: FOSSEE, IIT Bombay
 // Email: toolbox@scilab.in
 
-function varargout = intqpipopt (varargin)
+function varargout = intquadprog (varargin)
 	// Solves a linear quadratic problem.
 	//
 	//   Calling Sequence
-	//   xopt = intqpipopt(H,f)
-	//   xopt = intqpipopt(H,f,intcon)
-	//   xopt = intqpipopt(H,f,intcon,A,b)
-	//   xopt = intqpipopt(H,f,intcon,A,b,Aeq,beq)
-	//   xopt = intqpipopt(H,f,intcon,A,b,Aeq,beq,lb,ub)
-	//   xopt = intqpipopt(H,f,intcon,A,b,Aeq,beq,lb,ub,x0)
-	//   xopt = intqpipopt(H,f,intcon,A,b,Aeq,beq,lb,ub,x0,options)
-	//   xopt = intqpipopt(H,f,intcon,A,b,Aeq,beq,lb,ub,x0,options,"file_path")
-	//   [xopt,fopt,exitflag,output] = intqpipopt( ... )
+	//   xopt = intquadprog(H,f)
+	//   xopt = intquadprog(H,f,intcon)
+	//   xopt = intquadprog(H,f,intcon,A,b)
+	//   xopt = intquadprog(H,f,intcon,A,b,Aeq,beq)
+	//   xopt = intquadprog(H,f,intcon,A,b,Aeq,beq,lb,ub)
+	//   xopt = intquadprog(H,f,intcon,A,b,Aeq,beq,lb,ub,x0)
+	//   xopt = intquadprog(H,f,intcon,A,b,Aeq,beq,lb,ub,x0,options)
+	//   xopt = intquadprog(H,f,intcon,A,b,Aeq,beq,lb,ub,x0,options,"file_path")
+	//   [xopt,fopt,exitflag,output] = intquadprog( ... )
 	//   
 	//   Parameters
 	//   H : a symmetric matrix of double, represents coefficients of quadratic in the quadratic problem.
