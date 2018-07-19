@@ -3,7 +3,7 @@ Checklhs
 Checkrhs
 Checktype
 Checkvector
-cbcintlinprog
+intlinprog
 cbcmatrixintlinprog
 cbcmpsintlinprog
 ecos

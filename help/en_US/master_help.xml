@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE book [
 <!--Begin Entities-->
-<!ENTITY a071723dda12f42a9305860e1fd59e147 SYSTEM "/home/sreerag/fossee/FOSSEE-Optimization-toolbox43/help/en_US/cbcintlinprog.xml">
+<!ENTITY a071723dda12f42a9305860e1fd59e147 SYSTEM "/home/sreerag/fossee/FOSSEE-Optimization-toolbox43/help/en_US/intlinprog.xml">
 <!ENTITY a40d08c1784967eb81cfb1bcef2185bd9 SYSTEM "/home/sreerag/fossee/FOSSEE-Optimization-toolbox43/help/en_US/fgoalattain.xml">
 <!ENTITY aada61689c903157e893f96815214d77b SYSTEM "/home/sreerag/fossee/FOSSEE-Optimization-toolbox43/help/en_US/fminbnd.xml">
 <!ENTITY af058dd9b1fb2dc1cfe01b01d4320a289 SYSTEM "/home/sreerag/fossee/FOSSEE-Optimization-toolbox43/help/en_US/fmincon.xml">
